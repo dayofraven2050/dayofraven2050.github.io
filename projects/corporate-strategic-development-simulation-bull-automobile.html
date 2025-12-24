@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporate Strategic Development Simulation – Bull Automobile · Buyuan Cao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../project.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="project-header">
+        <a class="back-link" href="../index.html">← Back to portfolio</a>
+        <h1>Corporate Strategic Development Simulation – Bull Automobile</h1>
+        <p class="project-meta">Key Member &amp; Data Analyst · Mar 2025 – Jun 2025 · Cesim Global Challenge (10 rounds, 11 firms)</p>
+        <p class="project-summary">
+          Led a 10-round corporate strategy simulation and built a full analytics pipeline in Python to uncover what drives cumulative shareholder return (CTSR). Using statistical tests and machine learning, I quantified the impact of long-term strategic choices (R&amp;D intensity, ESG reputation, cost discipline) and short-term tactical moves (marketing adjustments), and translated findings into actionable playbooks for future rounds and policy-style recommendations.
+        </p>
+      </header>
+
+      <main class="project-content">
+        <section>
+          <h2>Key Contributions</h2>
+          <ul>
+            <li>Built a decision analytics pipeline for 10-round simulation data (11 firms), including data reshaping, encoding, and multi-market/product integration to enable cross-round benchmarking.</li>
+            <li>Quantified drivers of long-term performance (CTSR) via ANOVA decomposition and a decision-tree-based importance framework, highlighting ESG reputation, production cost control, R&amp;D intensity, and adjusted HR efficiency as stable contributors.</li>
+            <li>Separated long-term strategy vs. short-term tactics by contrasting static KPIs with dynamic “change-rate” KPIs; showed that short-term marketing adjustments can create temporary gains, while long-horizon strategic discipline dominates overall CTSR.</li>
+            <li>Segmented strategic archetypes using PCA + K-means to map firms into interpretable clusters (e.g., traditional outsourcing-focused vs. EV-focused innovators), enabling clearer competitive positioning.</li>
+            <li>Diagnosed supply–demand gaps with XGBoost classification and SHAP-style interpretation, finding production capacity as the key bottleneck while advertising/ESG can amplify demand pressure.</li>
+            <li>Modeled learning-curve advantage in EV strategy using LSTM time-series forecasting to illustrate how early EV scale-up can reduce unit costs over time and improve projected performance trajectory.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Toolkit &amp; Methods</h2>
+          <ul class="tag-list">
+            <li>ANOVA &amp; Tukey HSD</li>
+            <li>Pearson Correlation</li>
+            <li>PCA</li>
+            <li>K-means</li>
+            <li>Decision Tree</li>
+            <li>XGBoost</li>
+            <li>SHAP Interpretation</li>
+            <li>LSTM Time-series Forecasting</li>
+            <li>Python (pandas, NumPy, scikit-learn, statsmodels, SciPy, TensorFlow, Matplotlib)</li>
+          </ul>
+          <figure class="project-figure">
+            <div class="figure-frame">
+              <a href="../assets/projects/bull-automobile/toolkit.png" target="_blank" rel="noreferrer">
+                <img src="../assets/projects/bull-automobile/toolkit.png" alt="Toolkit overview" loading="lazy" onerror="this.style.display='none'; this.closest('.figure-frame').classList.add('missing');" />
+              </a>
+            </div>
+            <figcaption>End-to-end analytics toolkit spanning statistical tests, machine learning, and time-series modeling.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Highlights</h2>
+          <div class="figure-grid">
+            <figure class="project-figure">
+              <div class="figure-frame">
+                <a href="../assets/projects/bull-automobile/ANOVA.png" target="_blank" rel="noreferrer">
+                  <img src="../assets/projects/bull-automobile/ANOVA.png" alt="ANOVA decomposition results" loading="lazy" onerror="this.style.display='none'; this.closest('.figure-frame').classList.add('missing');" />
+                </a>
+              </div>
+              <figcaption>ANOVA decomposition shows contribution of cost, ESG, and HR efficiency to CTSR.</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <div class="figure-frame">
+                <a href="../assets/projects/bull-automobile/decisiontree.png" target="_blank" rel="noreferrer">
+                  <img src="../assets/projects/bull-automobile/decisiontree.png" alt="Decision tree of strategic drivers" loading="lazy" onerror="this.style.display='none'; this.closest('.figure-frame').classList.add('missing');" />
+                </a>
+              </div>
+              <figcaption>Decision tree reveals the hierarchy of strategic levers influencing CTSR.</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <div class="figure-frame">
+                <a href="../assets/projects/bull-automobile/clustering.png" target="_blank" rel="noreferrer">
+                  <img src="../assets/projects/bull-automobile/clustering.png" alt="PCA clusters for strategic archetypes" loading="lazy" onerror="this.style.display='none'; this.closest('.figure-frame').classList.add('missing');" />
+                </a>
+              </div>
+              <figcaption>PCA + clustering map firms into strategic archetypes for clearer positioning.</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <div class="figure-frame">
+                <a href="../assets/projects/bull-automobile/LSTM1.png" target="_blank" rel="noreferrer">
+                  <img src="../assets/projects/bull-automobile/LSTM1.png" alt="LSTM demand forecast" loading="lazy" onerror="this.style.display='none'; this.closest('.figure-frame').classList.add('missing');" />
+                </a>
+              </div>
+              <figcaption>LSTM-based projections illustrate demand and performance sensitivity over time.</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <div class="figure-frame">
+                <a href="../assets/projects/bull-automobile/LSTM2.png" target="_blank" rel="noreferrer">
+                  <img src="../assets/projects/bull-automobile/LSTM2.png" alt="Learning curve effects" loading="lazy" onerror="this.style.display='none'; this.closest('.figure-frame').classList.add('missing');" />
+                </a>
+              </div>
+              <figcaption>Learning-curve dynamics highlight early EV scale-up benefits on unit cost trajectory.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

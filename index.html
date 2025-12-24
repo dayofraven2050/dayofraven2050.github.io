@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>曹卜元 · Buyuan Cao — 全栈 / 数据 / AI</title>
+  <meta name="description" content="Portfolio of Buyuan Cao (曹卜元): marketing insight, data storytelling, competitions, internships, and research projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">BUYUAN CAO</div>
+      <div class="links">
+        <a href="#competitions">Awards</a>
+        <a href="#internships">Internship</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container inner">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <h1 class="title">BUYUAN&nbsp;CAO</h1>
+          <div class="typing">I am <span id="role"></span></div>
+          <p class="sub">I blend data-driven market insight with customer research and storytelling to turn complex findings into actionable growth strategies.</p>
+          <div class="cta">
+            <a class="btn" href="#competitions">View Awards</a>
+            <a class="btn secondary" href="#contact">Say Hello</a>
+          </div>
+          <div class="hero-metrics metrics">
+            <article class="metric-card">
+              <h3>Top 7%</h3>
+              <p>Shanghai University BBA GPA 92 / 100</p>
+            </article>
+            <article class="metric-card">
+              <h3>8+</h3>
+              <p>National-level awards in market research and trade competitions</p>
+            </article>
+            <article class="metric-card">
+              <h3>600+</h3>
+              <p>Survey responses and interviews translated into insights</p>
+            </article>
+            <article class="metric-card">
+              <h3>5</h3>
+              <p>Industry internships across automotive, consulting, port logistics, finance</p>
+            </article>
+          </div>
+        </div>
+        <div class="hero-carousel">
+          <div class="carousel-frame">
+            <img src="assets/gallery/cby1.jpeg" alt="Buyuan Cao" class="carousel-image active" />
+            <img src="assets/gallery/cby2.jpeg" alt="Buyuan Cao" class="carousel-image" />
+            <img src="assets/gallery/cby3.jpeg" alt="Buyuan Cao" class="carousel-image" />
+            <img src="assets/gallery/cby4.jpg" alt="Buyuan Cao at HKU offer holding day" class="carousel-image" />
+          </div>
+          <div class="carousel-dots" role="tablist">
+            <button class="dot active" aria-label="Show photo 1"></button>
+            <button class="dot" aria-label="Show photo 2"></button>
+            <button class="dot" aria-label="Show photo 3"></button>
+            <button class="dot" aria-label="Show photo 4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <section id="competitions">
+    <div class="container">
+      <h2 class="sec">Honors &amp; Awards</h2>
+      <div class="award-list">
+        <div class="award-row">
+          <span class="award-date">11/2025</span>
+          <span class="award-text">First-class Scholarship for Excellent Character and Academic Performance</span>
+        </div>
+        <div class="award-row">
+          <span class="award-date">11/2025</span>
+          <span class="award-text">National Second Prize, China University Business Elite Challenge (RCEP) – International Trade</span>
+        </div>
+        <div class="award-row">
+          <span class="award-date">11/2024</span>
+          <span class="award-text">Grand-class Scholarship for Excellent Character and Academic Performance | Merit Students | Second-class Scholarship for “TOEFL &amp; IELTS Scholarship”, Shanghai University</span>
+        </div>
+        <div class="award-row">
+          <span class="award-date">06/2024</span>
+          <span class="award-text">National First Prize, “Zhengda Cup” 14th National College Student Market Survey &amp; Analysis Competition</span>
+        </div>
+        <div class="award-row">
+          <span class="award-date">05/2024</span>
+          <span class="award-text">National First Prize, China University Business Elite Challenge – International Trade</span>
+        </div>
+        <div class="award-row">
+          <span class="award-date">09/2023</span>
+          <span class="award-text">Bronze Prize, 9th “Internet+” National Undergraduate Innovation &amp; Entrepreneurship Competition (Shanghai)</span>
+        </div>
+      </div>
+
+      <h3 class="sec-sub">Qualification &amp; Certificates</h3>
+      <div class="award-list">
+        <div class="award-row">
+          <span class="award-date">09/2025</span>
+          <span class="award-text">Journal Reviewer (recognized) — Economic Analysis and Policy, Elsevier</span>
+        </div>
+        <div class="award-row">
+          <span class="award-date">03/2025 – 06/2025</span>
+          <span class="award-text">Teaching Assistant – Intelligent Financial Decision-Making</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="internships">
+    <div class="container">
+      <h2 class="sec">Internships & Practice</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-logo-block">
+                <img src="public/icons/porsche.jpeg" alt="Porsche logo" onerror="this.parentElement.classList.add('logo-missing');" />
+                <span class="logo-fallback">P</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Porsche · AI-Training Intern, Network Development</h3>
+                <p class="timeline-meta">Shanghai · 06/2025 – Present</p>
+                <p>Productionized a mDeBERTa news classifier while maintaining the AI training platform’s multi-tenant Postgres data loops.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-logo-block">
+                <img src="public/icons/deloitte.png" alt="Deloitte logo" onerror="this.parentElement.classList.add('logo-missing');" />
+                <span class="logo-fallback">D</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Deloitte · Financial Analyst Assistant</h3>
+                <p class="timeline-meta">Shanghai · 03/2025 – 06/2025</p>
+                <p>Benchmarked Wanbang Biopharmaceuticals against five peers and modeled profitability, cost drivers, and strategy scenarios to shape capital structure and ROI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-logo-block">
+                <img src="public/icons/pwc.png" alt="PwC logo" onerror="this.parentElement.classList.add('logo-missing');" />
+                <span class="logo-fallback">P</span>
+              </div>
+              <div class="timeline-body">
+                <h3>PwC Zhongtian LLP · Auditing Intern</h3>
+                <p class="timeline-meta">Shanghai · 01/2025 – 02/2025</p>
+                <p>Audited fragrance and motorcycle groups by reconciling ~1,000 vouchers, drafting expense working papers, and validating ledgers with Excel lookups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-logo-block">
+                <img src="public/icons/SIPG.png" alt="SIPG logo" onerror="this.parentElement.classList.add('logo-missing');" />
+                <span class="logo-fallback">S</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Shanghai International Port Logistics (SIPG) · Investment Mgmt. Specialist</h3>
+                <p class="timeline-meta">Shanghai · 06/2024 – 08/2024</p>
+                <p>Produced 3k-word investment briefs on sea-rail logistics, benchmarking competitors and tracking financing, policy, and geopolitical risks for leadership.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-inner">
+              <div class="timeline-logo-block">
+                <img src="public/icons/SPDB.png" alt="SPD Bank logo" onerror="this.parentElement.classList.add('logo-missing');" />
+                <span class="logo-fallback">S</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Shanghai Pudong Development Bank · Analytical Assistant</h3>
+                <p class="timeline-meta">Shanghai · 07/2023 – 09/2023</p>
+                <p>Assessed debt capability for VIP clients and clustered deposit and card-spend flows into actionable risk and marketing personas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="sec">Projects &amp; Research</h2>
+      <div class="grid project-grid">
+        <article class="project-card">
+          <div class="project-media image-frame">
+            <img src="public/projects/bull-automobile/cover.png" alt="Corporate Strategic Development Simulation – Bull Automobile cover" loading="lazy" onerror="this.style.display='none';" />
+          </div>
+          <div class="project-body">
+            <h3>Corporate Strategic Development Simulation – Bull Automobile</h3>
+            <p>Led a 10-round corporate strategy simulation and built a Python analytics pipeline to explain what drives CTSR (shareholder return).</p>
+            <ul class="tags">
+              <li>Business simulation</li>
+              <li>Strategy analytics</li>
+              <li>Machine learning</li>
+              <li>Python</li>
+            </ul>
+            <a class="project-link" href="projects/corporate-strategic-development-simulation-bull-automobile.html">Read case</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media image-frame">
+            <img src="public/projects/cpgroup/cover.png" alt="Healthy Vending Machines – CP Group cover" loading="lazy" onerror="this.style.display='none';" />
+          </div>
+          <div class="project-body">
+            <h3>Healthy Vending Machines – CP Group</h3>
+            <p>Designed an AHP-driven site-selection and sampling plan for CP Group’s health vending machine pilot in Shanghai, including questionnaire design, sample-size calculation, and reliability/validity testing.</p>
+            <ul class="tags">
+              <li>Market research</li>
+              <li>AHP</li>
+              <li>Sampling design</li>
+              <li>SPSS/Excel</li>
+            </ul>
+            <a class="project-link" href="projects/healthy-vending-machines-cp-group.html">Read case</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media image-frame">
+            <img class="cover-yanghe" src="public/projects/yanghe/cover.png" alt="Yanghe Distillery Financial Statement Analysis cover" loading="lazy" onerror="this.style.display='none';" />
+          </div>
+          <div class="project-body">
+            <h3>Yanghe Distillery Financial Statement Analysis</h3>
+            <p>Three-statement analysis of Yanghe (2019–2023) with peer benchmarking, working-capital insights, and relative valuation (PE/PB).</p>
+            <ul class="tags">
+              <li>Financial analysis</li>
+              <li>Reporting</li>
+              <li>Valuation</li>
+            </ul>
+            <a class="project-link" href="projects/yanghe-distillery-financial-statement-analysis.html">Read case</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media image-frame">
+            <img src="public/projects/sc/mindmap.png" alt="Digital Business Environment &amp; Corporate Innovation cover" loading="lazy" onerror="this.style.display='none';" />
+          </div>
+          <div class="project-body">
+            <h3>Digital Business Environment &amp; Corporate Innovation</h3>
+            <p>Built a CSMAR firm-year panel and a Smart Court index pipeline, and designed robustness &amp; cross-sectional analyses. This page showcases the poster, a research mindmap, and the tax-uncertainty index construction.</p>
+            <ul class="tags">
+              <li>Panel data</li>
+              <li>Smart Courts</li>
+              <li>Corporate innovation</li>
+              <li>Tax uncertainty</li>
+            </ul>
+            <a class="project-link" href="projects/digital-business-environment-corporate-innovation-smart-courts.html">Read case</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media image-frame">
+            <img src="public/projects/eldenring/cover.png" alt="Elden Ring Marketplace Insight cover" loading="lazy" onerror="this.style.display='none';" />
+          </div>
+          <div class="project-body">
+            <h3>Elden Ring Marketplace Insight</h3>
+            <p>Combined search-trend mining, survey segmentation, DiD shock analysis, and UGC topic/sentiment modeling to map Elden Ring player personas and DLC pain points.</p>
+            <ul class="tags">
+              <li>Market research</li>
+              <li>Persona</li>
+              <li>DiD</li>
+              <li>NLP</li>
+            </ul>
+            <a class="project-link" href="projects/elden-ring-marketplace-insight.html">Read case</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media image-frame">
+            <img src="public/projects/avatar/cover.png" alt="Beyond the Skin · Avatar Experiment cover" loading="lazy" onerror="this.style.display='none';" />
+          </div>
+          <div class="project-body">
+            <h3>Beyond the Skin · Avatar Experiment</h3>
+            <p>Built and deployed a 2×2 avatar × product experiment with a web-based simulated gameplay flow, capturing client-side behavioral analytics and export-ready datasets for downstream modeling.</p>
+            <ul class="tags">
+              <li>Web experiment</li>
+              <li>Analytics</li>
+              <li>ANOVA</li>
+              <li>SEM</li>
+            </ul>
+            <a class="project-link" href="projects/beyond-the-skin-avatar-experiment.html">Read case</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="sec">Let’s Collaborate</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Send Message</h3>
+          <form id="contact-form" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" placeholder="Project or topic" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell me about your idea" required></textarea>
+            </label>
+            <button type="submit" class="btn contact-btn">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-side">
+          <div class="contact-card">
+            <h3>Contact Methods</h3>
+            <div class="contact-methods">
+              <a class="contact-method" href="mailto:dayofraven2050@gmail.com">
+                <span class="method-icon">✉️</span>
+                <div>
+                  <div class="method-label">Email</div>
+                  <div class="method-value">dayofraven2050@gmail.com</div>
+                </div>
+              </a>
+              <div class="contact-method">
+                <span class="method-icon">💬</span>
+                <div>
+                  <div class="method-label">WeChat</div>
+                  <div class="method-value">cby02468</div>
+                </div>
+              </div>
+              <a class="contact-method" href="https://github.com/dayofraven2050" target="_blank" rel="noreferrer">
+                <span class="method-icon">💻</span>
+                <div>
+                  <div class="method-label">GitHub</div>
+                  <div class="method-value">github.com/dayofraven2050</div>
+                </div>
+              </a>
+              <a class="contact-method" href="https://orcid.org/0009-0001-7446-7215" target="_blank" rel="noreferrer">
+                <span class="method-icon">🆔</span>
+                <div>
+                  <div class="method-label">ORCID</div>
+                  <div class="method-value">0009-0001-7446-7215</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-card create-card">
+            <div class="create-header">Let’s Connect</div>
+            <p>Whether you’re reaching out for a project, a research chat, or simply to plan a run, a pickup game, or a trip — I’m always up for meeting interesting people and exploring new ideas.</p>
+            <ul class="create-bullets">
+              <li>Quick reply (usually within 24 hours)</li>
+              <li>Projects &amp; research collaborations</li>
+              <li>Runs, hoops, and travel plans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Buyuan Cao · Powered by curiosity and GitHub Pages</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
