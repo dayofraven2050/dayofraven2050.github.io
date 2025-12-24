@@ -27,6 +27,9 @@ body {
   overflow-x: hidden;
   position: relative;
   isolation: isolate;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body::before {
@@ -750,6 +753,7 @@ footer {
   color: var(--muted);
   border-top: 1px solid var(--border);
   background: #0c0c14;
+  margin-top: auto;
 }
 
 .timeline + .timeline {
