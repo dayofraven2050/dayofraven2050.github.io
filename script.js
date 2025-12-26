@@ -170,6 +170,25 @@ if (contactForm) {
   });
 }
 
+// Sync header height to CSS variable to avoid overlap on different devices/zoom
+(function syncHeaderHeight() {
+  const headerEl =
+    document.querySelector('.nav') ||
+    document.querySelector('header') ||
+    document.querySelector('nav');
+  if (!headerEl) return;
+  const setVar = () => {
+    const h = Math.ceil(headerEl.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--header-h', `${h}px`);
+  };
+  setVar();
+  window.addEventListener('resize', setVar);
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver(setVar);
+    ro.observe(headerEl);
+  }
+})();
+
 // Hero carousel
 const carouselImages = Array.from(document.querySelectorAll('.carousel-image'));
 const dots = Array.from(document.querySelectorAll('.carousel-dots .dot'));

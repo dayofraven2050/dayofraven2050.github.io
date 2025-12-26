@@ -20,6 +20,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Porsche Next', 'PorscheNext', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
@@ -31,13 +35,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: var(--header-h);
 }
 
 .page-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: var(--header-h);
 }
 
 .page-content {
@@ -150,6 +154,7 @@ h1.title {
   font-size: clamp(40px, 7vw, 96px);
   line-height: 1.05;
   margin: 12px 0 12px;
+  padding-top: 8px;
   font-weight: 800;
   letter-spacing: 0.02em;
   background: linear-gradient(90deg, var(--pink), var(--accent), var(--primary));
@@ -157,6 +162,7 @@ h1.title {
   background-clip: text;
   color: transparent;
   text-shadow: 0 0 24px rgba(124, 77, 255, 0.2);
+  overflow: visible;
 }
 
 .typing {
@@ -905,6 +911,10 @@ footer {
   display: grid;
   gap: 6px;
   font-size: 0.95rem;
+}
+
+html {
+  scroll-padding-top: calc(var(--header-h) + 12px);
 }
 
 @media (max-width: 900px) {
