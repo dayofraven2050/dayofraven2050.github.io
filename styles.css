@@ -8,6 +8,7 @@
   --card: #121222;
   --border: #23233a;
   --maxw: 1080px;
+  --header-h: 72px;
 }
 
 * {
@@ -28,6 +29,19 @@ body {
   position: relative;
   isolation: isolate;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--header-h);
+}
+
+.page-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -108,6 +122,7 @@ header.hero {
   min-height: 92vh;
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 
 .hero .inner {
@@ -134,7 +149,7 @@ header.hero {
 h1.title {
   font-size: clamp(40px, 7vw, 96px);
   line-height: 1.05;
-  margin: 0 0 12px;
+  margin: 12px 0 12px;
   font-weight: 800;
   letter-spacing: 0.02em;
   background: linear-gradient(90deg, var(--pink), var(--accent), var(--primary));
@@ -937,6 +952,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-h: 64px;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
